@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.m-index{
+    @include flexbox();
+    @include flex-direction(colum);
+    height:100%;
+    header{
+        
+    }
+}
