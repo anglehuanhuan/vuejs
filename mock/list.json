@@ -1,10 +1,22 @@
 [
-  {
-    "name": "aihong",
-    "age": 18
-  },
-  {
-    "name": "junchao",
-    "age": 20
-  }
-]
+			{
+				"imgsrc":"/images/L1.jpg",
+				"id":"lb1"
+			},
+			{
+				"imgsrc":"/images/22.gif",
+				"id":"lb2"
+			},
+			{
+				"imgsrc":"/images/L3.jpg",
+				"id":"lb3"
+			},
+			{
+				"imgsrc":"/images/L4.jpg",
+				"id":"lb4"
+			},
+			{
+				"imgsrc":"/images/L5.jpg",
+				"id":"lb5"
+			}
+		]

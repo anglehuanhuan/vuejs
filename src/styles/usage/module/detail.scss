@@ -1,0 +1,31 @@
+@charset "utf-8";
+#detail-box{
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    header{
+         height: .44rem;
+         background: #fff;
+            span{
+                display:block;
+                line-height: .44rem;
+                font-size: .16rem;
+                color:#636368;
+                font-weight: bold;
+            }
+            .back{
+                float: left;
+                font-size: .2rem;
+            }
+            .title{
+                text-align: center;    
+            }
+            a{
+                text-decoration: none;
+            }
+    }
+    #detail-content{
+        @include flex();
+        width: 100%;
+    }
+}

@@ -1,0 +1,70 @@
+
+[{"id":"new1",
+	"content":[
+		{"imgsrc":"/images/21.gif",
+			"id":"new11",
+			"title":"mixplus 淘金店",
+			"price":"￥538"
+		},
+		{"imgsrc":"/images/22.gif",
+			"id":"new12",
+			"title":"style window",
+			"price":"￥180.00"
+		},
+		{"imgsrc":"/images/21.gif",
+			"id":"new13",
+			"title":"mixplus 淘金店",
+			"price":"￥538"
+		},
+		{"imgsrc":"/images/22.gif",
+			"id":"new14",
+			"title":"style window",
+			"price":"￥180.00"
+		},
+		{"imgsrc":"/images/21.gif",
+			"id":"new15",
+			"title":"mixplus 淘金店",
+			"price":"￥538"
+		},
+		{"imgsrc":"/images/22.gif",
+			"id":"new16",
+			"title":"style window",
+			"price":"￥180.00"
+		}
+		]
+},{
+	"id":"new2",
+	"content":[
+		{"imgsrc":"/images/21.gif",
+			"id":"new21",
+			"title":"mixplus 淘金店",
+			"price":"￥538"
+		},
+		{"imgsrc":"/images/22.gif",
+			"id":"new22",
+			"title":"style window",
+			"price":"￥180.00"
+		},
+		{"imgsrc":"/images/21.gif",
+			"id":"new23",
+			"title":"mixplus 淘金店",
+			"price":"￥538"
+		},
+		{"imgsrc":"/images/22.gif",
+			"id":"new24",
+			"title":"style window",
+			"price":"￥180.00"
+		},
+		{"imgsrc":"/images/21.gif",
+			"id":"new1",
+			"title":"mixplus 淘金店",
+			"price":"￥538"
+		},
+		{"imgsrc":"/images/22.gif",
+			"id":"new25",
+			"title":"style window",
+			"price":"￥180.00"
+		}
+		]
+
+}]

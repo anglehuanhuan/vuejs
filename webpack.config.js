@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var ET = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: __dirname + '/src/app.js',
+  entry: __dirname +'/src/app.js',
 
   output: {
     path: __dirname + '/prd/',
@@ -22,6 +22,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader?presets[]=es2015'
+//				loader:'babel'
       },
 
       {
@@ -30,12 +31,26 @@ module.exports = {
         loader: ET.extract('style', 'css!sass')
       },
        {
-        test: /\.html$/,
+        test: /\.string$/,
         loader: 'string'
+      },
+      {
+      	test:/\.vue$/,
+      	loader:'vue'
       }
     ]
   },
-
+  
+  vue:{
+  	laders:{
+  		js:'babel'
+  	}
+  },
+   resolve: {
+	    alias: {
+	      'vue$': 'vue/dist/vue.min.js'
+	    }
+	},
   devServer: {
     contentBase: __dirname + '/prd',
     port: 80,
@@ -51,7 +66,7 @@ module.exports = {
   },
 
   plugins: [
-    //new webpack.optimize.UglifyJsPlugin(),
+		new webpack.optimize.UglifyJsPlugin(),
     new ET('bundle.css')
   ]
 }

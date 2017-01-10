@@ -1,0 +1,24 @@
+@charset "UTF-8";
+#xiang-box{
+     @include flexbox();
+    @include flex-direction(column);
+    height:100%;
+         overflow: hidden;
+        header{
+            height: .44rem;
+            background: #fff;
+            text-align: center;
+            span{
+                dispaly:block;
+                line-height: .44rem;
+                font-size: .16rem;
+                color:#636368;
+                font-weight: bold;
+            }
+        }
+        section{
+            @include flex();
+            width: 100%;
+            overflow: hidden;
+        }
+}

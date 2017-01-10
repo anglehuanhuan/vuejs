@@ -1,11 +1,73 @@
 <div class="m-index" id="m_index">
-	<header>
-		<span>商城</span>
-	</header>
-	<section>
+	
+		<header>
+			<span>商城</span>
+		</header>
+		<section id="mall-container">
+			<div id="scrollWrap">
+				 <div class="head hide">
+		              <img src="/images/arrow.png" width="40" height="40"/>
+		              <span>下拉刷新...</span>
+		         </div>
+				<div class="swiper-container" id="mall-lb">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide" v-for='item in lbList'>
+				    	<img :src="item.imgsrc"/>
+				    </div>
+				  </div>
+				   <div class="swiper-pagination"></div>
+				</div>
+				<h3>线下门店尖货上新</h3>
+				<div class="swiper-container" id="mall-new">
+				  <div class="swiper-wrapper">
+				   	<ul  class="swiper-slide" class="">
+				   		<li v-for="item in mewPro1">
+				   			<img :src="item.imgsrc" alt="" />
+				   			<i>{{item.title}}</i>
+				   			<b v-html="item.price"></b>
+				   		</li>
+				   	</ul>
+				   	<ul  class="swiper-slide">
+				   		<li v-for="item in mewPro2">
+				   			<img :src="item.imgsrc" alt="" />
+				   			<i>{{item.title}}</i>
+				   			<b v-html="item.price"></b>
+				   		</li>
+				   	</ul>
+				  </div>
+				   <div class="swiper-pagination"></div>
+				</div>
+				<h3>门店优品限量惠</h3>
+				<div class="mall-sale">
+						<ul class="sale-content">
+							<li class="sale-item" v-for="item in mallSale"><img :src="item.imgsrc" alt="" /><i>{{item.title}}</i><i>{{item.titleSub}}</i><b>{{item.price}}</b></li>
+						</ul>		
+				</div>
+				<section class="lt"  v-for="cl in mallClass">
+					<img class="titleImg" :src="cl.titleImg"/>
+					<div class="mall-part" >
+						<ul class="part-content">
+							<li class="part-item"  v-for="item in cl.content"><img :src="item.imgsrc" alt="" /><i>{{item.title}}</i><i>{{item.titleSub}}</i><b>{{item.price}}</b></li>
+						</ul>		
+					</div>
+				</section>
 		
-	</section>
+				<div class="foot hide">
+		            <img src="/images/arrow.png" width="40" height="40"/>
+		            <span>上拉加载更多...</span>
+		        </div>
+			</div>
+			
+		</section>
+
+	
 	<footer>
-		
+		<ul>
+			<li><i class="yo-ico">&#xe61d;</i>
+				<b>特辑</b></li>
+			<li class="active"><i class="yo-ico">&#xe7a3;</i><b>商城</b></li>
+			<li><i class="yo-ico">&#xe60e;</i><b>想逛</b></li>
+			<li><i class="yo-ico">&#xe6ce;</i><b>我的</b></li>
+		</ul>
 	</footer>
 </div>
